@@ -54,7 +54,7 @@ def populate_people_table():
     
     con = sqlite3.connect(db_path)
     cur = con.cursor()
-    fake = Faker("en_CA")
+    fake = Faker()
 
     for _ in range(200):
         name = fake.name()
